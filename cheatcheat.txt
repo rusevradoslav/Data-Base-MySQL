@@ -1,0 +1,26 @@
+CREATE PROCEDURE
+DELIMITER //
+ 
+CREATE PROCEDURE GetAllProducts()
+BEGIN
+    SELECT *  FROM products;
+END //
+ 
+DELIMITER ;
+
+-------------------------------------------------------------------------------------------
+CREATE FUNCTION
+
+DELIMITER $$
+ 
+CREATE FUNCTION function_name(
+    param1,
+    param2,…
+)
+RETURNS datatype
+[NOT] DETERMINISTIC
+BEGIN
+ -- statements
+END $$
+ 
+DELIMITER ;	

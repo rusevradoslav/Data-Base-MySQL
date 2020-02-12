@@ -1,0 +1,1 @@
+DELETE FROM employees WHERE department_id in (2,1) order by id;
